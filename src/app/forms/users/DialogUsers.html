@@ -1,0 +1,98 @@
+<form [formGroup]="userInformation" #formDirective="ngForm" novalidate class="form">
+    <h1 class="title_dialog" mat-dialog-title>{{title}}</h1>
+    <div *ngIf="action =='delete'" class="description">
+        Realmente deseas desactivar al usuario {{data.nombres}} {{data.apellidos}}?
+    </div>
+    <div *ngIf="action !='delete'">
+
+        <div class="row">
+            <div class="col-md-6">
+                <label class="label">Nombres</label>
+                <mat-form-field appearance="outline" style="width:100%">
+                    <input style="width:100%" matInput placeholder="Nombres del usuario" formControlName="names"
+                        required>
+                    <mat-error>Por favor llene este campo</mat-error>
+                </mat-form-field>
+            </div>
+
+            <div class="col-md-6">
+                <label class="label">Apellidos</label>
+                <mat-form-field appearance="outline" style="width:100%">
+                    <input style="width:100%" matInput placeholder="Apellidos del usuario" formControlName="lastNames"
+                        required>
+                    <mat-error>Por favor llene este campo</mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label class="label">Correo electrónico</label>
+                <mat-form-field appearance="outline" style="width:100%">
+                    <input style="width:100%" matInput placeholder="Correo del usuario" formControlName="email"
+                        required>
+                    <mat-error>Este campo debe ser llenado con un email válido</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <label class="label">Teléfono</label>
+
+                <mat-form-field appearance="outline" style="width:100%">
+                    <input matInput placeholder="Teléfono del usuario" formControlName="phone" required>
+                    <mat-error>Este campo debe ser llenado sólo con números</mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-6" *ngIf="action=='edit'">
+                <label class="label">No. documento</label>
+                <mat-form-field appearance="outline" style="width:100%">
+                    <input matInput placeholder="Numero de documento" formControlName="identification" required
+                        readonly>
+                    <mat-error>Por favor llene este campo</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6" *ngIf="action=='new'">
+                <label class="label">No. documento</label>
+                <mat-form-field appearance="outline" style="width:100%">
+                    <input matInput placeholder="Numero de documento" formControlName="identification" required>
+                    <mat-error>Por favor llene este campo</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <label class="label">Ciudad</label>
+
+                <mat-form-field appearance="outline" style="width:100%">
+                    <mat-select class="select" formControlName="city" required>
+                        <mat-option class="option" value="1">
+                            Barranquilla
+                        </mat-option>
+
+                    </mat-select>
+                    <mat-error>Por favor llene este campo</mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <label class="label">Fecha de ingreso</label>
+                <mat-form-field appearance="outline" style="width:100%">
+                    <input matInput formControlName="date" type="date" required>
+                    <mat-error>Por favor llene este campo</mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="col-md-12">
+
+        <mat-dialog-actions align="end">
+            <button type="button" class="action_cancel" mat-button (click)="dialogClose()">Cancelar</button>
+            <button mat-raised-button class="actions_styles"
+                (click)="store($event,formDirective)">{{actions[action]}}</button>
+        </mat-dialog-actions>
+    </div>
+</form>

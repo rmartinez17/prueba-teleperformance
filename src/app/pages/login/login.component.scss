@@ -1,0 +1,119 @@
+.login-card {
+    max-width: 400px;
+    max-height: 440px;
+    height: 440px;
+    margin: auto;
+    top: 10%;
+    border: 0px;
+    border-radius: 30px;
+    background-color: #307eaf;
+}
+
+.login-card-header {
+    padding: 10px;
+    text-align: center;
+}
+.logo {
+    width: 40%;
+}
+h1 {
+    color: #c0dff9;
+    font-family: Poppins-Medium;
+    font-size: 22px;
+    
+}
+.login-card-bottom {
+    text-align: center !important;
+    margin-top: -10px !important;
+}
+
+/* Input outline
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:host ::ng-deep {
+    /* normal */
+    .mat-form-field-appearance-outline .mat-form-field-outline {
+        color: #ffffff !important;
+        background-color: #ffffff !important;
+        /* border-radius: 20px !important; */
+        border: #ffffff 2px;
+        /* border-style: none !important; */
+        outline: none !important;
+        border: 0 !important;
+    }
+    /*focus*/
+    .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+        color: #ffffff !important;
+        /* border-radius: 20px !important; */
+        border: #ffffff 2px;
+        /*  border-style: none !important; */
+        outline: none !important;
+        border: 0 !important;
+    }
+    .mat-form-field.mat-focused .mat-form-field-label {
+        color: #ffffff !important;
+    }
+}
+
+.login-button {
+    background-color: #bbe1f8;
+    color: white;
+    width: 62%;
+    height: 52px;
+    font-size: 16px;
+    font-family: Poppins-Medium;
+    border-radius: 18px;
+}
+
+.register-business {
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.register-business a {
+    color: #5e04fe;
+    font-weight: bold;
+}
+mat-error {
+    color: #a3a3a3;
+    font-family: "Poppins-Light";
+}
+
+*::-webkit-input-placeholder {
+    /* Google Chrome y Safari */
+    color: #b2b2b2;
+    font-family: "Poppins-Regular";
+    font-size: 12px;
+}
+*:-moz-placeholder {
+    /* Firefox anterior a 19 */
+    color: #b2b2b2;
+    font-family: "Poppins-Regular";
+    font-size: 12px;
+}
+*::-moz-placeholder {
+    /* Firefox 19 y superior */
+    color: #b2b2b2;
+    font-family: "Poppins-Regular";
+    font-size: 12px;
+}
+*:-ms-input-placeholder {
+    /* Internet Explorer 10 y superior */
+    color: #b2b2b2;
+    font-family: "Poppins-Regular";
+    font-size: 12px;
+}
+
+input {
+    color: #b2b2b2;
+    font-family: "Poppins-Regular";
+    height: 13px;
+}
+.forgot_password {
+    font-family: Poppins-Regular !important;
+    font-size: 12px !important;
+    color: #ffffff !important;
+}
+mat-icon{
+    color:#0E4A71 !important;
+}

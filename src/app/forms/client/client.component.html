@@ -1,0 +1,60 @@
+<div class="row">
+    <div class="col-md-4 col-xs-4 col-sm-4 col-lg-4">
+        <p class="title_user">Clientes </p>
+
+    </div>
+</div>
+
+
+
+<mat-card class="col-md-12" class="card_style">
+    <mat-card-header style="margin-bottom: 20px;" class="col-md-12 col-xs-12 col-sm-12 col-lg-12 responsive-header">
+        <mat-paginator class="pagination" [length]="dataParams.total" [pageSize]="dataParams.per_page"
+            [pageSizeOptions]="[25,50, 100]" (page)="handlePage($event)">
+        </mat-paginator>
+        <span class="toolbar-spacer"></span>
+        <fieldset class=" style-search">
+            <input class="input_search" (keyup)="filtrar($event)" matInput placeholder="Buscar..." />
+        </fieldset>
+    </mat-card-header>
+    <mat-divider class="mat-divider"></mat-divider>
+
+
+    <mat-card-content>
+        <div class="table_style">
+            <table mat-table [dataSource]="dataSource" class="highlight" style="width: 100%;"
+                *ngIf="dataSource.filteredData && dataSource.filteredData.length>0">
+                <ng-container matColumnDef="avatar">
+                    <th mat-header-cell *matHeaderCellDef> Foto </th>
+                    <td mat-cell *matCellDef="let row"> <img class="avatar" [src]="row.avatar" alt=""> </td>
+                </ng-container>
+
+                <ng-container matColumnDef="first_name">
+                    <th mat-header-cell *matHeaderCellDef>Nombres </th>
+                    <td mat-cell *matCellDef="let row"> {{row.first_name}} </td>
+                </ng-container>
+                <ng-container matColumnDef="last_name">
+                    <th mat-header-cell *matHeaderCellDef> Apellidos </th>
+                    <td mat-cell *matCellDef="let row"> {{row.last_name}} </td>
+                </ng-container>
+                <ng-container matColumnDef="email">
+                    <th mat-header-cell *matHeaderCellDef> Correo electrónico</th>
+                    <td mat-cell *matCellDef="let row"> {{row.email}} </td>
+                </ng-container>
+               
+
+
+                <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+                <tr mat-row *matRowDef="let row; columns: columnsToDisplay"></tr>
+            </table>
+            <table *ngIf="dataSource.filteredData && dataSource.filteredData.length==0" class="highlight"
+                style="text-align: center; margin: 0; width: 100%;">
+                <h1>No hay clientes registrados en este momento</h1>
+
+            </table>
+        </div>
+
+
+    </mat-card-content>
+
+</mat-card>

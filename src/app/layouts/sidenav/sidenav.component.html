@@ -1,0 +1,24 @@
+
+<mat-accordion>
+    <mat-expansion-panel [expanded]="panel === 0" (opened)="setPanel(0)" class="mat-elevation-z0">
+        <mat-expansion-panel-header>
+            <mat-panel-title style="font-family: 'Poppins-Medium';">
+                <mat-icon [class]="panel === 0? 'active spacer-icon' : 'spacer-icon' ">dashboard</mat-icon>
+                <strong [class]="panel === 0? 'active' : ''">Configuracion</strong>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-nav-list>
+            
+            <mat-list-item class="mat-link-item" routerLink="/dashboard/admin/users">
+                <p class="poppins" matLine>Usuarios</p>
+            </mat-list-item>
+            <mat-list-item class="mat-link-item" routerLink="/dashboard/admin/clients">
+                <p class="poppins" matLine>Clientes</p>
+            </mat-list-item>
+            
+        </mat-nav-list>
+    </mat-expansion-panel>
+    <!--end-->
+    
+   
+</mat-accordion>

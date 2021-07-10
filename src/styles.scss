@@ -1,0 +1,110 @@
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "assets/bootstrap-grid/bootstrap-grid.min.css";
+@font-face {
+    font-family: Poppins-Light;
+    src: url(assets/font/Poppins-Light.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(assets/font/Poppins-Regular.ttf) format("opentype");
+}
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(assets/font/Poppins-SemiBold.ttf) format("opentype");
+}
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(assets/font/Poppins-Medium.ttf) format("opentype");
+}
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(assets/font/Poppins-Bold.ttf) format("opentype");
+}
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #0e4a71;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.mat-link-item {
+    height: 30px !important;
+}
+.active {
+    color: #307eaf !important;
+    
+}
+.spacer-icon {
+    margin-right: 10px;
+}
+.custom-modalbox {
+    mat-dialog-container {
+        border-radius: 22px !important;
+        border: 1px solid !important;
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
+        border-color: #e7e7f0 !important;
+    }
+}
+.actions_styles {
+    color: #fcfdfe !important;
+    background: #307eaf !important;
+    border-radius: 7px !important;
+
+    font-size: 18px;
+    font-family: "Poppins-Medium" !important;
+}
+.action_cancel {
+    color: #307eaf !important;
+    background: #fcfdfe !important;
+    border-radius: 7px !important;
+
+    font-size: 18px;
+    font-family: "Poppins-Medium" !important;
+    border: solid 1px #307eaf !important;
+}
+/* Containers
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.father-container {
+    margin: auto;
+    flex-grow: 1;
+    text-align: center;
+    /*padding-top: 48px;*/
+    padding-top: 56px;
+    padding-bottom: 48px;
+    width: 100%;
+}
+.son-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* Toolbar Spacer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.toolbar-spacer {
+    flex: 1 1 auto;
+}
+.background-white{
+    background-color: #ffffff !important;
+    
+
+}
+.fab {
+    right: 20px;
+    bottom: 20px;
+    position: fixed !important;
+}
+.purple-bg {
+    color: #fcfdfe !important;
+    background: #307eaf !important;
+}

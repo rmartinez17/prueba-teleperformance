@@ -1,0 +1,16 @@
+<h1 class="title_dialog" mat-dialog-title>Cerrar sesión</h1>
+
+
+<div class="description">
+    Realmente deseas cerrar la sesión?
+  </div>
+
+
+  <div class="col-md-12 top">
+
+    <mat-dialog-actions align="end">
+      <button class="action_cancel" mat-button (click)="dialogClose()">No</button>
+      <button mat-raised-button class="actions_styles" type="submit" (click)="logOut()">Si</button>
+    </mat-dialog-actions>
+
+  </div>

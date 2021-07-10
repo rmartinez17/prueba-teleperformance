@@ -1,0 +1,220 @@
+.title_user {
+    font-family: Poppins-Medium;
+    font-size: 22px;
+    margin-left: 17px;
+}
+.input_search {
+    color: black;
+    outline: none;
+    border-style: none;
+}
+.card_style {
+    border-radius: 12px;
+    border: 1px solid #f0f1f6;
+}
+.style-search {
+    border-radius: 30px;
+    height: 32px;
+    width: 26%;
+    border: 1px solid #f0f1f6;
+    background-color: white;
+    font-family: Poppins-Light;
+    margin: auto;
+    margin-right: 17px;
+}
+
+// ESTILO PARA SCROLL TABLA
+.table_style {
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: scroll;
+    height: 500px;
+}
+
+.table_style::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.table_style::-webkit-scrollbar:vertical {
+    width: 7px;
+}
+
+.table_style::-webkit-scrollbar-button:increment,
+.table_style::-webkit-scrollbar-button {
+    display: none;
+}
+
+.table_style::-webkit-scrollbar:horizontal {
+    height: 7px;
+}
+
+.table_style::-webkit-scrollbar-thumb {
+    background-color: #307eaf;
+    border-radius: 20px;
+    border: 2px solid #307eaf;
+}
+
+.table_style::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+th {
+    color: #9a9a9a;
+    font-family: "Poppins-Regular";
+    font-size: 14px;
+    text-align: center !important;
+    padding: 10px;
+}
+td {
+    color: #535252;
+    text-align: center;
+    padding: 10px;
+    font-family: "Poppins-Regular";
+    font-size: 14px;
+}
+.mat-header-cell,
+.td.mat-cell {
+    padding: 10px 20px 10px 20px;
+}
+th.mat-header-cell,
+td.mat-cell,
+td.mat-footer-cell {
+    padding: 10px 20px 10px 20px;
+}
+.w-100 {
+    width: 100% !important;
+}
+
+@media screen and (max-width: 980px) {
+    .responsive-header {
+        display: flex !important;
+        flex-direction: column !important;
+        position: relative !important;
+    }
+}
+@media screen and (min-width: 340px) {
+    .style-search {
+        width:91% !important;
+    }
+    .pagination {
+        height: 100px !important;
+    }
+}
+@media screen and (min-width: 930px) {
+    .style-search {
+        width:26% !important;
+    }
+    .pagination {
+        height: 53px !important;
+    }
+}
+
+:host ::ng-deep {
+    /* normal */
+    .mat-form-field-appearance-outline .mat-form-field-outline {
+        color: #307eaf !important;
+        background-color: #ffffff !important;
+        border-radius: 30px !important;
+        border: #307eaf 2px !important;
+    }
+    /*focus*/
+    .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+        color: #307eaf !important;
+        border-radius: 30px !important;
+        border: #307eaf 2px !important;
+    }
+}
+.label {
+    font-family: Poppins-Medium;
+    color: #535252;
+    font-size: 17px;
+}
+*::-webkit-input-placeholder {
+    /* Google Chrome y Safari */
+    color: #535252;
+    font-family: "Poppins-Regular";
+    font-size: 15px;
+}
+*:-moz-placeholder {
+    /* Firefox anterior a 19 */
+    color: #535252;
+    font-family: "Poppins-Regular";
+    font-size: 15px;
+}
+*::-moz-placeholder {
+    /* Firefox 19 y superior */
+    color: #535252;
+    font-family: "Poppins-Regular";
+    font-size: 15px;
+}
+*:-ms-input-placeholder {
+    /* Internet Explorer 10 y superior */
+    color: #535252;
+    font-family: "Poppins-Regular";
+    font-size: 15px;
+}
+
+.title_dialog {
+    color: #484747;
+    font-family: Poppins-Medium;
+    font-size: 20px;
+    margin-left: 12px;
+}
+.margin_password {
+    margin-left: 12px;
+}
+.description {
+    font-family: "Poppins-Regular";
+    font-size: 15px;
+    margin-left: 12px;
+    margin-bottom: 24px;
+}
+input {
+    color: #535252;
+    font-family: "Poppins-Regular";
+}
+.select {
+    color: #535252;
+    font-family: "Poppins-Regular";
+}
+.option {
+    color: #535252;
+    font-family: "Poppins-Regular";
+}
+
+mat-hint {
+    color: #d1d1d1;
+    font-family: "Poppins-Regular";
+}
+mat-error {
+    color: #fc6c85;
+    font-family: "Poppins-Regular";
+}
+.top {
+    top: -12px;
+}
+.mat-divider {
+    width: 96%;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+.mb {
+    margin-bottom: 2%;
+}
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    height: 45px;
+    width: 45px;
+    float: center;
+}
+.pagination {
+    border-radius: 30px;
+    height: 53px;
+    border: 1px solid #f0f1f6;
+    font-family: Poppins-Regular;
+    font-size: 12px;
+
+    margin-left: -10px;
+}

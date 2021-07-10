@@ -1,0 +1,62 @@
+<app-toolbar></app-toolbar>
+
+            <!-- PRIMERO FILA -->
+
+            <div class="row" style="justify-content: center;    margin-top: 5%;">
+                <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12" style="text-align: center;">
+                    <h1>Reporte de compras del usuario {{auth.user.nombres}} {{auth.user.apellidos}}</h1>
+                </div>
+
+                <!--  COMPRAS REALIZADAS EN EL DIA-->
+                <div class="col-md-3 col-xs-12 card-height card_purchases_of_day">
+                    <div class="row">
+                        <div class="col-8">
+                            <p class="first_text_cards">Compras del dia</p>
+                            <p class="second_text_cards">Total dia actual</p>
+
+                        </div>
+                        <div class=" col-2">
+                            <p class="value_cards_first_row">8</p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- COMPRAS REALIZADAS EN EL MES -->
+                <div class="col-md-3 col-xs-12 card-height card_purchases_of_month">
+                    <div class="row">
+                        <div class=" col-8">
+                            <p class="first_text_cards">Compras del mes</p>
+                            <p class="second_text_cards">Total mes actual</p>
+
+                        </div>
+                        <div class=" col-2 " style="margin: inherit;">
+                            <p class="value_cards_first_row">14</p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- COMPRAS REALIZADAS EN EL AÑO -->
+                <div class="col-md-3 col-xs-12 card-height card_purchases_of_year">
+
+
+                    <div class="row">
+                        <div class="col-7">
+                            <p class="first_text_cards">Compras del año</p>
+                            <p class="second_text_cards">Total año actual</p>
+
+                        </div>
+                        <div class=" col-5" style="margin: inherit;">
+                            <p class="value_cards_first_row">{{ 61900  | currency }}</p>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+      

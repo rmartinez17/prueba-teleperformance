@@ -1,0 +1,17 @@
+.mat-toolbar.mat-primary {
+    z-index: 100000;
+}
+
+.background-toolbar {
+    background-image: radial-gradient(circle at 14.64% 111.24%, #6ea1ca 0, #2f7daf 50%, #005b95 100%);
+}
+.img_user {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+    margin-right: 5px;
+    border-radius: 100%;
+    color: red;
+    /* background: red; */
+    display: inline-block;
+}

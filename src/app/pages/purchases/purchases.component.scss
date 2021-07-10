@@ -1,0 +1,87 @@
+
+
+@media screen and (max-width: 576px) {
+    .card-height {
+        height: fit-content !important;
+    }
+}
+
+
+
+.card-height {
+    min-height: 100px;
+    padding: 10px;
+}
+
+.card_purchases_of_day {
+    font-size: 12px;
+    border-radius: 7px;
+
+    background: rgb(81, 78, 140);
+    background: rgb(81, 78, 140);
+    background: linear-gradient(135deg, rgba(81, 78, 140, 1) 4%, rgb(71 88 115) 72%);
+    color: white;
+    margin: 25px;
+    height: 80px;
+    width: 90%;
+}
+.card_purchases_of_month {
+    font-size: 12px;
+    border-radius: 7px;
+    background: rgb(201, 200, 228);
+    background: linear-gradient(135deg, rgb(159 196 204) 0%, rgba(30, 213, 229, 1) 100%, rgba(30, 213, 229, 1) 100%);
+    color: white;
+    margin: 25px;
+    height: 80px;
+    width: 90%;
+}
+.card_purchases_of_year {
+    font-size: 12px;
+    border-radius: 7px;
+    background: rgb(201, 200, 228);
+    background: linear-gradient(
+        135deg,
+        rgba(201, 200, 228, 1) 0%,
+        rgba(120, 168, 149, 1) 0%,
+        rgba(23, 170, 110, 1) 100%,
+        rgba(30, 213, 229, 1) 100%
+    );
+    color: white;
+    margin: 25px;
+    height: 80px;
+    width: 90%;
+}
+  
+.first_text_cards {
+    font-family: "Poppins-Regular";
+    font-size: 15px;
+    font-weight: bold;
+}
+.second_text_cards {
+    font-family: "Poppins-Regular";
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(220 211 222);
+}
+
+
+
+.value_cards_first_row {
+    font-family: "Poppins-Bold";
+    font-size: 25px;
+    margin: revert;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Poppins-Regular" !important;
+}
+.style_home {
+    font-family: Poppins-Medium;
+    font-size: 22px;
+    margin-left: 17px;
+}
+h1{
+    font-size: 20px;
+    font-family: Poppins-Bold;
+}
