@@ -31,7 +31,7 @@ export class UsersComponent implements OnInit {
   }
   /**
              * Este metodo se utiliza para mantener actualizado el array que llena la tabla
-             * en caso de una insercioón, actualización o eliminación
+             * en caso de una inserción, actualización o eliminación
              *
              * @access public
              * @param array recibido con estado actualizado

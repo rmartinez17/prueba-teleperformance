@@ -9,6 +9,14 @@ import { AuthService } from '../services/auth.service';
 export class AdminGuard implements CanActivate {
 
   constructor(private router: Router,private auth : AuthService){}
+  /**
+         * Este metodo se utiliza para validar que solamente el usuario administrador pueda entrar
+         * a las paginas del dashboard
+         *
+         * @access public
+         * @param 
+         * @return 
+   */
 
   canActivate(
     next: ActivatedRouteSnapshot,

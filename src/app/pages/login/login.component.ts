@@ -95,32 +95,7 @@ export class LoginComponent implements OnInit {
       }
     }
 
-    /* this.auth.login({ email, password }).subscribe(
-      (res: any) => {
-        this.showSnackBar(res.messages);
-        const { role } = res.data;
-        console.log('mira aqui res', res.data);
-        if (role.special != 'no-access') {
-          sessionStorage.setItem('isLoggedIn', 'si');
-          sessionStorage.setItem('data', JSON.stringify(res.data));
-          this.auth.user = JSON.parse(localStorage.getItem('data'));
-          //console.log('este es el usuario', res.data.user.id);
-
-
-
-
-          let page = `/${this.pageTo ? this.pageTo : 'dashboard/home'}`;
-
-
-          this.router.navigate([page]);
-        } else {
-          this.showToast('No tienes permisos para acceder a esta plataforma.');
-        }
-      },
-      (err: any) => {
-        this.showToast(err.error.messages[0]);
-      }
-    ); */
+   
   }
   /**
      * Este metodo se utiliza para mostrar mensajes o respuestas de peticiones http

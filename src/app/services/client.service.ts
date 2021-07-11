@@ -8,6 +8,13 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class ClientService {
 
   constructor(public http: HttpClient) {}
+  /**
+    * Este metodo ejecuta el endpoint de listar los usuarios clientes del sistema
+    *
+    * @access public
+    * @param objeto con los datos de paginación
+    * @return solicitud get, con listado de usuarios clientes
+*/
 
   index(obj) {
     const http_options = {
@@ -16,7 +23,7 @@ export class ClientService {
       }),
     };
     return this.http.get(
-      environment.INDEX_CLIENT + '?page=' + obj.page,
+      environment.INDEX_CLIENT +  '?per_page=' + obj.per_page + '&page=' + obj.page,
       http_options
     );
   }

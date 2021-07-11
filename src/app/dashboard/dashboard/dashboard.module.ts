@@ -12,6 +12,7 @@ import { UsersComponent,DialogUsers } from '../../forms/users/users.component';
 import {ClientComponent} from '../../forms/client/client.component';
 import { SidenavComponent } from '../../layouts/sidenav/sidenav.component';
 import { HomeComponent } from '../../forms/home/home.component';
+//Pipes
 import { DateLocalPipe } from 'src/app/pipes/date-local.pipe';
 
 @NgModule({

@@ -12,11 +12,17 @@ export class SidenavComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    if(localStorage.getItem("dashboard-panel")){
+    if (localStorage.getItem("dashboard-panel")) {
       this.panel = parseInt(localStorage.getItem("dashboard-panel"));
     }
   }
-
+  /**
+           * Este metodo se utiliza para determinar cual de los menús se encuentra seleccionado
+           *
+           * @access public
+           * @param indice del menú
+           * @return 
+     */
   setPanel(index: number) {
     localStorage.setItem('dashboard-panel', index.toString());
     this.panel = index;

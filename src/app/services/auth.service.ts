@@ -18,6 +18,7 @@ export class AuthService {
     sessionStorage.removeItem('isLoggedIn');
     sessionStorage.removeItem('data');
     this.user = undefined;
+    localStorage.clear();
     this.router.navigate(['/']);
   }
 }

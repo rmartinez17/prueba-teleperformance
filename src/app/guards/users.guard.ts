@@ -8,6 +8,14 @@ import { AuthService } from '../services/auth.service';
 })
 export class UsersGuard implements CanActivate {
   constructor(private router: Router,private auth : AuthService){}
+  /**
+         * Este metodo se utiliza para validar que solamente el usuario no admin pueda entrar
+         * a las paginas que le corresponden
+         *
+         * @access public
+         * @param 
+         * @return 
+   */
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
